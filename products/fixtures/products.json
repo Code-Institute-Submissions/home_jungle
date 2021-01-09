@@ -1,0 +1,16 @@
+[
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"plant45698774555",
+         "name":"African plant",
+         "description":"Plant gets up to 190 meters.",
+         "price":23.99,
+         "category":1,
+         "rating":4.6,
+         "image_url":"https://pixabay.com/nl/illustrations/bladeren-planten-tuin-planter-vaas-4757278/",
+         "image":"plants06.jpg"
+      }
+   }
+]
