@@ -339,5 +339,395 @@
     "image_url": null,
     "image": "plants20.jpg"
   }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "category": 5,
+    "sku": "decoration123478996552",
+    "name": "Flower shirt",
+    "description": "purple",
+    "has_sizes": true,
+    "price": "27.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "decoration01.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "category": 5,
+    "sku": "decoration123879444552",
+    "name": "Vanilla candle",
+    "description": "up to 48 hours",
+    "has_sizes": false,
+    "price": "4.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "decoration02.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "category": 4,
+    "sku": "decoration45665544",
+    "name": "Golden pillow",
+    "description": "50x50cm",
+    "has_sizes": false,
+    "price": "17.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "decoration03.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "category": 4,
+    "sku": "decoration11252522",
+    "name": "Pillow yellow art",
+    "description": "50x30cm",
+    "has_sizes": false,
+    "price": "17.95",
+    "rating": "4.40",
+    "image_url": null,
+    "image": "decoration04.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "category": 4,
+    "sku": "decoration78965441",
+    "name": "Grey pillow",
+    "description": "50x30cm",
+    "has_sizes": false,
+    "price": "27.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "decoration05.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 25,
+  "fields": {
+    "category": 4,
+    "sku": "decoration78965",
+    "name": "Pineapples",
+    "description": "ssss",
+    "has_sizes": false,
+    "price": "34.95",
+    "rating": "4.80",
+    "image_url": null,
+    "image": "decoration06.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 26,
+  "fields": {
+    "category": 4,
+    "sku": "decoration7896564",
+    "name": "Cactus pillow",
+    "description": "sss",
+    "has_sizes": false,
+    "price": "24.95",
+    "rating": "4.70",
+    "image_url": null,
+    "image": "decoration07.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 27,
+  "fields": {
+    "category": 4,
+    "sku": "decoration08978529",
+    "name": "Floral pillow",
+    "description": "red",
+    "has_sizes": false,
+    "price": "17.95",
+    "rating": "4.40",
+    "image_url": null,
+    "image": "decoration08.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 28,
+  "fields": {
+    "category": 4,
+    "sku": "decoration0978877",
+    "name": "Blue pillow",
+    "description": "40x40cm",
+    "has_sizes": false,
+    "price": "18.95",
+    "rating": "4.40",
+    "image_url": null,
+    "image": "decoration11.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 29,
+  "fields": {
+    "category": 5,
+    "sku": "decoration105554",
+    "name": "Vase hole",
+    "description": "ssss",
+    "has_sizes": false,
+    "price": "28.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "decoration10.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 30,
+  "fields": {
+    "category": 4,
+    "sku": "decoration12999555",
+    "name": "Love pillow",
+    "description": "sxx",
+    "has_sizes": false,
+    "price": "26.95",
+    "rating": "4.70",
+    "image_url": null,
+    "image": "decoration12.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 31,
+  "fields": {
+    "category": 5,
+    "sku": "decoratin1378996",
+    "name": "Candle lavendel",
+    "description": "up to 48 hours",
+    "has_sizes": false,
+    "price": "6.95",
+    "rating": "4.80",
+    "image_url": null,
+    "image": "decoration13.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 32,
+  "fields": {
+    "category": 5,
+    "sku": "decoration455855",
+    "name": "Lamp",
+    "description": "dd",
+    "has_sizes": false,
+    "price": "44.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "decoration14.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 33,
+  "fields": {
+    "category": 5,
+    "sku": "decoration158541555",
+    "name": "Candle lekker",
+    "description": "dddd",
+    "has_sizes": false,
+    "price": "7.95",
+    "rating": "4.90",
+    "image_url": null,
+    "image": "decoration15.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 34,
+  "fields": {
+    "category": 6,
+    "sku": "pots018556",
+    "name": "Indoor fruit band pot",
+    "description": "40x40cm",
+    "has_sizes": false,
+    "price": "17.95",
+    "rating": "4.80",
+    "image_url": null,
+    "image": "pots01.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 35,
+  "fields": {
+    "category": 7,
+    "sku": "pots0285559",
+    "name": "Handmade outdoor pot",
+    "description": "60cm",
+    "has_sizes": false,
+    "price": "14.95",
+    "rating": "4.40",
+    "image_url": null,
+    "image": "pots02.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 36,
+  "fields": {
+    "category": 7,
+    "sku": "pots03111130",
+    "name": "Teracotta pot 30cm",
+    "description": "30 cm",
+    "has_sizes": false,
+    "price": "11.95",
+    "rating": "4.70",
+    "image_url": null,
+    "image": "pots03.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 37,
+  "fields": {
+    "category": 7,
+    "sku": "pots03111140",
+    "name": "Teracotta pot 40cm",
+    "description": "40cm",
+    "has_sizes": false,
+    "price": "12.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "pots03_grtKqp2.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 38,
+  "fields": {
+    "category": 7,
+    "sku": "pots03111150",
+    "name": "Teracotta pot 50cm",
+    "description": "50cm",
+    "has_sizes": false,
+    "price": "14.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "pots03_2sg0mm8.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 39,
+  "fields": {
+    "category": 7,
+    "sku": "pots04995556",
+    "name": "Outdoor",
+    "description": "ddd",
+    "has_sizes": false,
+    "price": "27.95",
+    "rating": "4.80",
+    "image_url": null,
+    "image": "pots04.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 40,
+  "fields": {
+    "category": 7,
+    "sku": "pots051113633",
+    "name": "Flowers garden mini pot",
+    "description": "30x30cm",
+    "has_sizes": false,
+    "price": "11.95",
+    "rating": "4.30",
+    "image_url": null,
+    "image": "pots05.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 41,
+  "fields": {
+    "category": 6,
+    "sku": "pots0199566",
+    "name": "Indoor swirl",
+    "description": "White \r\n30x30cm",
+    "has_sizes": false,
+    "price": "12.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "plants01_n6ERxBD.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 42,
+  "fields": {
+    "category": 6,
+    "sku": "pots02146555",
+    "name": "Indoor glazed white",
+    "description": "40x40cm",
+    "has_sizes": false,
+    "price": "12.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "plants02_SjnnNyC.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 43,
+  "fields": {
+    "category": 7,
+    "sku": "pots0819666",
+    "name": "Outdoor pot",
+    "description": "60x60cm",
+    "has_sizes": false,
+    "price": "24.95",
+    "rating": "4.70",
+    "image_url": null,
+    "image": "plants08_4HLiihl.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 44,
+  "fields": {
+    "category": 6,
+    "sku": "pots1299556",
+    "name": "Baby blue pot",
+    "description": "30x30cm",
+    "has_sizes": false,
+    "price": "11.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "plants12_A52gVNC.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 45,
+  "fields": {
+    "category": 6,
+    "sku": "pots20995455",
+    "name": "Blue pot",
+    "description": "30x30cm",
+    "has_sizes": false,
+    "price": "10.95",
+    "rating": "4.50",
+    "image_url": null,
+    "image": "plants20_pHaKuLl.jpg"
+  }
 }
 ]
