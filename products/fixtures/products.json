@@ -1,16 +1,103 @@
 [
-   {
-      "pk":1,
-      "model":"products.product",
-      "fields":{
-         "sku":"plant45698774555",
-         "name":"African plant",
-         "description":"Plant gets up to 190 meters.",
-         "price":23.99,
-         "category":1,
-         "rating":4.6,
-         "image_url":"https://pixabay.com/nl/illustrations/bladeren-planten-tuin-planter-vaas-4757278/",
-         "image":"plants06.png"
-      }
-   }
+{
+  "model": "products.category",
+  "pk": 1,
+  "fields": {
+    "name": "africa",
+    "friendly_name": "Africa"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 2,
+  "fields": {
+    "name": "asia",
+    "friendly_name": "Asia"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 3,
+  "fields": {
+    "name": "america",
+    "friendly_name": "America"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 4,
+  "fields": {
+    "name": "pillows",
+    "friendly_name": "Pillows"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 5,
+  "fields": {
+    "name": "other",
+    "friendly_name": "Other"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 6,
+  "fields": {
+    "name": "indoor",
+    "friendly_name": "Indoor"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 7,
+  "fields": {
+    "name": "outdoor",
+    "friendly_name": "Outdoor"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "sku": "plant45698774555",
+    "name": "African plant",
+    "description": "Plant gets up to 190 meters.",
+    "has_sizes": false,
+    "price": "23.99",
+    "rating": "4.60",
+    "image_url": "https://pixabay.com/nl/illustrations/bladeren-planten-tuin-planter-vaas-4757278/",
+    "image": "plants06.png"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "category": 2,
+    "sku": "plant4597412136",
+    "name": "Asian plant",
+    "description": "100cm high",
+    "has_sizes": false,
+    "price": "19.99",
+    "rating": "4.50",
+    "image_url": null,
+    "image": "plants01_82YxdLT.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "category": 3,
+    "sku": "plants5998745663312",
+    "name": "American plant",
+    "description": "Up to 150cm",
+    "has_sizes": false,
+    "price": "17.95",
+    "rating": "4.20",
+    "image_url": null,
+    "image": "plants02_OYHx1dV.jpg"
+  }
+}
 ]
