@@ -99,5 +99,245 @@
     "image_url": null,
     "image": "plants02_OYHx1dV.jpg"
   }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "sku": "plant12365478",
+    "name": "African beauty",
+    "description": "xxxxx",
+    "has_sizes": false,
+    "price": "21.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "plants03_7dskKB4.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "category": 2,
+    "sku": "plant789985524",
+    "name": "Asian beauty",
+    "description": "xxxxxxxx",
+    "has_sizes": false,
+    "price": "22.95",
+    "rating": "4.10",
+    "image_url": null,
+    "image": "plants04_8eOKApw.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "category": 3,
+    "sku": "plant4577745",
+    "name": "American Beauty",
+    "description": "xxxxxxxxxx",
+    "has_sizes": false,
+    "price": "23.95",
+    "rating": "4.50",
+    "image_url": null,
+    "image": "plants05.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "category": 1,
+    "sku": "plant4551122",
+    "name": "African hart hang",
+    "description": "dddd",
+    "has_sizes": false,
+    "price": "24.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "plants07.png"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "category": 2,
+    "sku": "plant47774996",
+    "name": "Asian wig",
+    "description": "xxxx",
+    "has_sizes": false,
+    "price": "26.95",
+    "rating": "4.70",
+    "image_url": null,
+    "image": "plants08.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "category": 3,
+    "sku": "plant74499565",
+    "name": "American vet plant",
+    "description": "ddddd",
+    "has_sizes": false,
+    "price": "28.95",
+    "rating": "4.20",
+    "image_url": null,
+    "image": "plants09.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "category": 3,
+    "sku": "plant7788996",
+    "name": "mini vet plant",
+    "description": "ddddddddd",
+    "has_sizes": false,
+    "price": "14.95",
+    "rating": "3.90",
+    "image_url": null,
+    "image": "plants10.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "category": 2,
+    "sku": "plant789955444",
+    "name": "Green leaf",
+    "description": "dddddddd",
+    "has_sizes": false,
+    "price": "26.09",
+    "rating": "4.80",
+    "image_url": null,
+    "image": "plants11.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "category": 1,
+    "sku": "plant998774454",
+    "name": "prik prik",
+    "description": "ddddd",
+    "has_sizes": false,
+    "price": "17.95",
+    "rating": "4.10",
+    "image_url": null,
+    "image": "plants12.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "category": 2,
+    "sku": "plant445552144",
+    "name": "mini cactus",
+    "description": "dddd",
+    "has_sizes": false,
+    "price": "12.95",
+    "rating": "4.20",
+    "image_url": null,
+    "image": "plants13.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "category": 1,
+    "sku": "plant77784522",
+    "name": "Bush",
+    "description": "ssss",
+    "has_sizes": false,
+    "price": "28.95",
+    "rating": "4.90",
+    "image_url": null,
+    "image": "plants14.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "category": 1,
+    "sku": "plant794152522",
+    "name": "Beauty",
+    "description": "xxxxx",
+    "has_sizes": false,
+    "price": "37.95",
+    "rating": "4.90",
+    "image_url": null,
+    "image": "plants15.png"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "category": 3,
+    "sku": "plant9885554",
+    "name": "big bush",
+    "description": "ddddddd",
+    "has_sizes": false,
+    "price": "44.95",
+    "rating": "4.80",
+    "image_url": null,
+    "image": "plants17.png"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "category": 2,
+    "sku": "plant123269842",
+    "name": "wide rose",
+    "description": "dddd",
+    "has_sizes": false,
+    "price": "34.95",
+    "rating": "4.70",
+    "image_url": null,
+    "image": "plants18.png"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "category": 3,
+    "sku": "plant88745551",
+    "name": "big leavy",
+    "description": "dddd",
+    "has_sizes": false,
+    "price": "28.95",
+    "rating": "4.60",
+    "image_url": null,
+    "image": "plants19.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "category": 1,
+    "sku": "plant12998566",
+    "name": "mini leave",
+    "description": "dddd",
+    "has_sizes": false,
+    "price": "19.95",
+    "rating": "4.70",
+    "image_url": null,
+    "image": "plants20.jpg"
+  }
 }
 ]
