@@ -27,10 +27,12 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
+.home-jungle-button {
+    background: #00450B;
     color: white;
-    min-width: 260px;
+    font-size: xx-large;
+    min-width: 280px;
+    min-height: 140px;
 }
 
 .btn-black {
@@ -48,17 +50,17 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
-    color: white !important;
+    color: #EDFBED !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.home-jungle-button:hover,
+.home-jungle-button:active,
+.home-jungle-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #EDFBED;
+    color: black;
 }
 
 .text-black {
