@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 html {
     height: 100%;
 }
@@ -12,7 +14,9 @@ body {
 
 .navbar-styling {
     background-color: #00450B;
-    font-size: large;
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 0.1em;
 }
 
 /* from Bulma */
@@ -26,6 +30,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .main-logo-link {
