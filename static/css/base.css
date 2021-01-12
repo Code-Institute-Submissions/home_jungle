@@ -10,6 +10,11 @@ body {
     font-family: 'Lato';
 }
 
+.navbar-styling {
+    background-color: #00450B;
+    font-size: large;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
