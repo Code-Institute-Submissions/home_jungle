@@ -45,6 +45,7 @@ body {
     min-height: 140px;
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 0.2em;
+    border: solid white;
 }
 
 .btn-black {
