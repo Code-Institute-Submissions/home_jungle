@@ -35,7 +35,6 @@ img {
 .logo-font {
     text-transform: uppercase;
     font-family: 'Abril Fatface', cursive;
-    color: #00450B;
 }
 
 .main-logo-link {
@@ -368,5 +367,8 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+    .navbar-styling {
+    background-color: #EDFBED;
     }
 }
