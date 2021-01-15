@@ -13,7 +13,8 @@ body {
 }
 
 .navbar-styling {
-    background-color: #00450B;
+    background-color: #edfbed;
+    border: #00450B solid;
     font-size: 20px;
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 0.1em;
