@@ -13,8 +13,6 @@
 
 {% get_providers as socialaccount_providers %}
 
-<button><a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Login</a></button>
-
 {% if socialaccount_providers %}
 
 <p>{% blocktrans with site.name as site_name %}

@@ -46,9 +46,6 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
-    # providers
-    'allauth.socialaccount.providers.facebook',
-
     # Other
     'crispy_forms',
 ]
@@ -103,8 +100,6 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
-
-LOGIN_REDIRECT_URL = "/" 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
