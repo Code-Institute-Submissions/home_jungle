@@ -13,12 +13,12 @@ _This app is made for educational use only._
   - [Strategy](#strategy)
   - [Scope](#scope)
   - [Structure](#structure)
-  - [Database Schema](#database-schema)
+  - [Code Structure](#code-structure)
   - [Skeleton](#skeleton)
   - [Surface](#surface)
   - [Mockups](#mockups)
 - [Features](#features)
-  - [Code Structure](#code-structure)
+  - [Database Schema](#database-schema)
   - [Features left to implement](#features-left-to-implement)
 - [Technologies](#technologies)
   - [Deployment](#deployment)
@@ -83,7 +83,6 @@ On this website the admin has the option to use all the CRUD functions: Create, 
 - bag.html / The Bag Page: for users to see what is in their bag
 - checkout.html / The Checkout Page: a form with all the personal details of the user and an overview of the bag
 - products.html / The Products Page: a page with all the products, sorted by the way the user has choosen
-- 
 - add_product.html / The Add Product Page: the page for the admin to add a new product
 - edit_product.html / The Edit Product Page: the page for the admin to to edit a existing product or to delete a existing product
 - static folder: all the static files
@@ -93,13 +92,115 @@ On this website the admin has the option to use all the CRUD functions: Create, 
 ### Structure
 
 ### Code Structure
+![See Code Structure](http://readme/codestructure_homejungle.txt)
 
 ### Skeleton 
+- Header: 
+  - Top Slider:
+    - Message 1: New plants coming soon!
+    - Message 2: Free delivery on order over $50!
+    - Message 3: Deliveries can take a bit longer than usual.
+  - Top Nav:
+    - Title: link to homepage
+    - Searchbar: searches trought all products
+    - My Jungle:
+      - User Icon
+      - Dropdown Menu:
+        - Logged out user:
+          - Register
+          - Login
+        - Logged in user:
+          - My Profile
+          - Logout
+        - Logged in admin:
+          - Product Management
+          - My Profile
+          - Logout
+     - Shopping Cart:
+        - Basket Icon
+  - Main Nav Menu: 
+    - All Products is a collapsible menu with four options:
+      - By Price
+      - By Rating
+      - By Category
+      - All Products
+    - Plants is a collapsible menu ton with four options:
+      - Africa
+      - Asia
+      - America
+      - All Plants
+    - Pots is a collapsible menu with three options:
+      - Indoor
+      - Outdoor
+      - All Pots
+    - Decoration is a collapsible menu with three options:
+      - Pillows
+      - Other
+      - All Decorations
+- Homepage: 
+  - Button 1: link to product page
+- Register: form field:
+  - Field 1: e-mail address
+  - Field 2: e-mail address confirmation
+  - Field 3: username
+  - Field 4: password
+  - Field 5: password confirmation
+  - Button 1: back to login
+  - Button 2: sign up
+- Login: form field:
+  - Field 1: e-mail address
+  - Field 2: password
+  - Checkbox: remember me
+  - Button 1: home
+  - Button 2: sign in
+- Password Reset: form field:
+  - Field 1: e-mail address
+  - Button 1: back to login
+  - Button 2: reset my password 
+- Logout: 
+  - Button 1: cancel
+  - Button 2: sign out
+- Profile: form field and overview order history:
+  - Field 1: phone number
+  - Field 2: street address 1
+  - Field 3: street address 2
+  - Field 4: town or city
+  - Field 5: country, state or locality
+  - Field 6: postal code
+  - Field 7: country dropdown menu (all the countries included)
+  - Button: update information
+- Add Product: form field:
+  - Field 1: category dropdown menu (Africa, Asia, America, Indoor, Outdoor, Pillows, Other)
+  - Field 2: sku
+  - Field 3: product name
+  - Field 4 (big text field): product description
+  - Field 5: sizes dropdown menu (No, Yes, Unknown)
+  - Field 6: rating
+  - Field 7: image url
+  - Button 1: select image
+  - Button 2: cancel
+  - Button 3: add product
+- Edit Product: form field, the same as add product. Extra option:
+  - Checkbox: remove image
+- Toasts to display messages as pop ups on every page using django messages module, with messages for most actions across the website.
 
 ### Surface
 
-### Mockups 
 
+![Dark_Green](readme/dark_green.JPG) <br>
+![Light_Green](readme/light_green.JPG) <br>
+![Btn_Success](readme/btn-success.JPG)
+
+### Mockups 
+The following wireframes were created using Balsamiq to design the website layout options:
+<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/HOMEPAGE.pdf>Homepage</a>
+<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/PRODUCTS.pdf>Products</a>
+<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/PRODUCT_DETAILS.pdf>Product Details</a>
+<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/REGISTER.pdf>Register</a>
+<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/LOGIN.pdf>Login</a>
+<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/BAG.pdf>Bag</a>
+<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/CHECKOUT.pdf>Checkout</a>
+         
 ## Features
 
 ### Code Structure
