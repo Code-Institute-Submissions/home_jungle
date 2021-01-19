@@ -1,45 +1,144 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Home Jungle
+This is an e-commerce website for selling plants and plant decoration. 
+The website will be a site where users can browse through plants and plant decoration and will be able to purchase them. 
 
-Welcome kimkesdev,
+_This app is made for educational use only._
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## Deployed Site
+[Live website](https://home-jungle.herokuapp.com/)
 
-## Gitpod Reminders
+## Index
+- [UX](#ux)
+  - [User Stories](#user-stories)
+  - [Strategy](#strategy)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Database Schema](#database-schema)
+  - [Skeleton](#skeleton)
+  - [Surface](#surface)
+  - [Mockups](#mockups)
+- [Features](#features)
+  - [Code Structure](#code-structure)
+  - [Features left to implement](#features-left-to-implement)
+- [Technologies](#technologies)
+  - [Deployment](#deployment)
+  - [Setting up Heroku](#setting-up-heroku)
+  - [Deploying to Heroku](#deploying-to-heroku)
+  - [Committing files to GitHub](#committing-files-to-github)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
+  - [Acknowledge](#acknowledge)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX
 
-`python3 -m http.server`
+### User Stories
 
-A blue button should appear to click: *Make Public*,
+Viewing and Navigation by Shopper
+- View a list of all the products
+- View individual product details
+- Quickly identify different type of products
+- See the total amount in my shopping bag
 
-Another blue button should appear to click: *Open Browser*.
+Registration and User Accounts by Site User
+- Easily register for an account
+- Receive an email confirmation after registering
+- Easily login or logout
+- Easily recover my password
+- Have a personalized user profile
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Sorting and Searching by shopper
+- Sort the list of available products
+- Sort a specific category of products
+- Sort multiple categories of products simultaneously
+- Search for a product by name or description
+- Easily see what i’ve searched for and the number of results
 
-A blue button should appear to click: *Make Public*,
+Purchasing an Checkout by shopper
+- Easily select the quantity of a product when purchasing it
+- View items in my bag to be purchased
+- Adjust the quantity of individual items in my bag
+- Easily enter my payment information
+- View an order confirmation after checkout
+- Receive an email confirmation after checking out
 
-Another blue button should appear to click: *Open Browser*.
+Admin and Store Management by store owner
+- Add a new product
+- Edit a product
+- Delete a product
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Strategy
 
-## Updates Since The Instructional Video
+This website is designed so users can scroll throught the products and sort them in several ways. By clicking on a product they can read the product details and add the product to their shopping cart. When a product is added, the user can click checkout to complete their order by filling in the form. <br>
+Every user has the option to register for an account and to login at their account. <br>
+On this website the admin has the option to use all the CRUD functions: Create, Read, Update and Delete.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Scope
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- base.html / The Base Page: the navigation header for all the pages
+- home.html / The Home Page: the landing page where users can choose how to search for products
+- signup.html / The Register Page: for new users to create an account
+- login.html / The Login Page: for already registered users to login
+- profiles.html / The Profile Page: with all the personal information and order history of registered users
+- bag.html / The Bag Page: for users to see what is in their bag
+- checkout.html / The Checkout Page: a form with all the personal details of the user and an overview of the bag
+- products.html / The Products Page: a page with all the products, sorted by the way the user has choosen
+- 
+- add_product.html / The Add Product Page: the page for the admin to add a new product
+- edit_product.html / The Edit Product Page: the page for the admin to to edit a existing product or to delete a existing product
+- static folder: all the static files
+- media folder: all the products
+- readme folder: all the files for the README.md
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Structure
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Code Structure
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Skeleton 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Surface
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Mockups 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Features
 
---------
+### Code Structure
 
-Happy coding!
+### Features left to implement
+- Social account login (Google and Facebook). This feature allows users to login using social networks accounts, Google and Facebook, that would enhance user experience and make the login process easier. And a button to share a product on their social media account.
+- A place where the registered user can rate a product.
+- A page where the admin can start a blog.
+- A button to sign up to the newsletter.
+
+## Technologies
+- HTML5 was used as the main language for the templates
+- CSS was ued for styling the webpage
+- JavaScript was used for some front end functionality
+- Python3 was used for backend data manipulation
+- Github was used for version control
+- Gitpod to build the website.
+- I used Django as I want to create a python based web framework for this project.
+- Django-Allauth for the authentication system 
+- Django Countries which was used for the country field for user to be able to selct the contry they are from
+- Django Crispy Forms to helps to manage the forms and able adjust forms properties in the backend
+- Gunicorn (‘Green Unicorn’) is a pure-Python WSGI server for UNIX.
+- Pillow to be able to use the image field for the products on the site
+- Stripe to set up the payment methods for the site as customer can pay by card
+- I used Bootstrap for responsive simplistic layouts.
+- I used JQuery for the JavaScript in the website
+- I used Font Awesome to add the icons used in the site
+- Block templates were used so I don’t have to repeat my code to save time
+- I used Amazon AWS for storing media and static files for use on my Heroku site
+- I used autopep8 to tidy up my python code
+- I used SQLite 3 for the database which stores the information from my site e.g. products, users
+- Testing was done on a seperate document which is: Testing.md
+- W3C Markup was used this to check my HTML for errors and typos
+- W3C CSS was used to check the validity of my CSS
+- Google Chrome Developer Tools for testing different divice sizes
+- Responsinator for testing different divice sizes
+- Fontawesome was used for some icons on the website
+
+## Deployment
+This project was developed using the GitPod and was committed to git and pushed to GitHub using the built in function within GitPod. 
+
+
