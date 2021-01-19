@@ -84,15 +84,40 @@ On this website the admin has the option to use all the CRUD functions: Create, 
 - checkout.html / The Checkout Page: a form with all the personal details of the user and an overview of the bag
 - products.html / The Products Page: a page with all the products, sorted by the way the user has choosen
 - add_product.html / The Add Product Page: the page for the admin to add a new product
-- edit_product.html / The Edit Product Page: the page for the admin to to edit a existing product or to delete a existing product
+- edit_product.html / The Edit Product Page: the page for the admin to to edit a existing product
 - static folder: all the static files
 - media folder: all the products
 - readme folder: all the files for the README.md
 
 ### Structure
+- Header: 
+  - On the top a autoplay slider with messages
+  - Navbar on large devices:
+    - Top-navbar with on the left the title, in the middle the searchbar and on the right the menu items (My Jungle & Shopping Cart)
+      - The My Jungle dropdown menu will change, depending on if the user is logged out, loggin in or it’s the admin
+      - The Shopping Cart will change, depending on if the Bag is empty or filled
+    - Main-navbar with the menu categories
+  - Navbar on medium and small devices:
+    - Hamburger icon with dropdown menu: home and categories
+      - Each category has it's own dropdown menu
+    - Search Icon that will search trought all the products
+    - My Jungle icon with dropdown menu that will change, depending on if the user is logged out, loggin in or it’s the admin
+    - Shopping Cart icon
+- Landing Page: very large button to go to all the products
+- Login Page: form field with buttons and checkbox
+- Signup Page: form field with buttons
+- Profile Page: form field with buttons + order history
+- Add Product Page: form field
+- Edit Product Page: form field with checkbox
+- Bag Page: button + added product
+- Logout Page: buttons
+- Password Reset Page: form field with buttons
+- Checkout Page: buttons
+- Products Page: all products
+- Product Page: product details
 
 ### Code Structure
-![See Code Structure](http://readme/codestructure_homejungle.txt)
+![See Code Structure](readme/codestructure_homejungle.txt)
 
 ### Skeleton 
 - Header: 
@@ -186,20 +211,119 @@ On this website the admin has the option to use all the CRUD functions: Create, 
 
 ### Surface
 
+- Font Family standard text: Lato
+- Font Family titles and categories: Abril Fatface from Google Fonts
+- Color scheme: green
+- Background color: white, accept the Home Page has a full image
 
-![Dark_Green](readme/dark_green.JPG) <br>
-![Light_Green](readme/light_green.JPG) <br>
-![Btn_Success](readme/btn-success.JPG)
+![Dark_Green](readme/dark_green.JPG width="200") <br>
+![Light_Green](readme/light_green.JPG width="200") <br>
+![Btn_Success](readme/btn-success.JPG width="200")
+
+- Header slider: 
+  - Text color: white
+  - Background color: 
+    - Slider 1: dark green 
+    - Slider 2: black
+    - Slider 3: dark green
+- Header top-navbar on large devices: 
+  - Text color: black
+  - Text color inside searchbar: light grey
+  - Background color: white
+  - Icons: black
+- Header top-navbar and main-navbar on medium and small devices: 
+  - Text color: black
+  - Text color inside searchbar: light grey
+  - Background color: white
+  - Icons color: black
+- Header main-navbar: 
+  - Text color: black
+  - Text color inside searchbar: light grey
+  - Background color collapsible product menu: light green
+  - Background color collapsible Search and My Jungle icons: white 
+  - Icons color: black
+    - Shopping Cart Icon when filled: green
+- Home Page:
+  - Full page image
+  - Button: dark green, white border, white text
+  - Button hoover over: light green, white border, black text
+- Sign Up Page:
+  - Background: white
+  - Title: dark green
+  - Form: black borders, light grey text
+  - Button 1: white with black border, black text
+  - Button 2: green with black border, white text
+- Login Page:
+  - Background: white
+  - Title: dark green
+  - Form: white with black borders, light grey text
+  - Checkbox: unchecked
+  - Button 1: white with black border, black text
+  - Button 2: green with black border, white text
+- Profile Page:
+  - Background: white
+  - Title: dark green
+  - Form: white with black borders, light grey text
+  - Button: green with black border, white text
+- Logout Page:
+  - Background: white
+  - Title: dark green
+  - Text: dark grey
+  - Button 1: white with black border, black text
+  - Button 2: green with black border, white text
+- Password Reset Page:
+  - Background: white
+  - Title: dark green
+  - Text: dark grey
+  - Form: white with black borders, light grey text
+  - Button 1: white with black border, black text
+  - Button 2: green with black border, white text
+- Bag Page:
+  - Background: white
+  - Title: dark green
+  - Text: dark grey
+  - Button: green with black border, white text
+- Add Product Page:
+  - Background: white
+  - Form: white with black borders, light grey text
+  - Button 1: green with black border, white text
+  - Button 2: white with black border, black text
+  - Button 3: green with black border, white text
+- Edit Product Page:
+  - Background: white
+  - Form: white with black borders, light grey text
+  - Checkbox: red, unchecked
+  - Button 1: green with black border, white text
+  - Button 2: white with black border, black text
+  - Button 3: green with black border, white text 
+- Products Page:
+  - Background: white
+  - Images: black border
+  - Sort menu: white with black border, grey text
+  - Back to top icon: white with green border and arrow
+  - Product: image, dark green title, dark grey price, grey tag and rating
+  - Light grey horizontal border between the products
+- Product Detail Page:
+  - Background: white
+  - Image: big with black border, aligned whole left site on larger devices, aligned on top on smaller devices
+  - Title: dark green
+  - Price: $ in dark grey
+  - Tag: grey
+  - Rating: grey
+  - Product information: grey
+  - Quantity: left the minus icon, middle the quantity, right the plus icon
+  - Button 1: white with black border, black text
+  - Button 2: green, white text
 
 ### Mockups 
 The following wireframes were created using Balsamiq to design the website layout options:
-<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/HOMEPAGE.pdf>Homepage</a>
-<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/PRODUCTS.pdf>Products</a>
-<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/PRODUCT_DETAILS.pdf>Product Details</a>
-<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/REGISTER.pdf>Register</a>
-<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/LOGIN.pdf>Login</a>
-<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/BAG.pdf>Bag</a>
-<a href="https://https://github.com/kimkesdev/home_jungle/blob/master/readme/CHECKOUT.pdf>Checkout</a>
+![Homepage](readme/HOMEPAGE.pdf)
+![Products](readme/PRODUCTS.pdf)
+![Product Details](readme/PRODUCT_DETAILS.pdf)
+![Register](readme/REGISTER.pdf)
+![Login](readme/LGOIN.pdf)
+![Bag](readme/BAG.pdf)
+![Checkout](readme/CHECKOUT.pdf)
          
 ## Features
 
@@ -212,34 +336,33 @@ The following wireframes were created using Balsamiq to design the website layou
 - A button to sign up to the newsletter.
 
 ## Technologies
-- HTML5 was used as the main language for the templates
-- CSS was ued for styling the webpage
-- JavaScript was used for some front end functionality
-- Python3 was used for backend data manipulation
-- Github was used for version control
-- Gitpod to build the website.
-- I used Django as I want to create a python based web framework for this project.
-- Django-Allauth for the authentication system 
-- Django Countries which was used for the country field for user to be able to selct the contry they are from
-- Django Crispy Forms to helps to manage the forms and able adjust forms properties in the backend
-- Gunicorn (‘Green Unicorn’) is a pure-Python WSGI server for UNIX.
-- Pillow to be able to use the image field for the products on the site
-- Stripe to set up the payment methods for the site as customer can pay by card
-- I used Bootstrap for responsive simplistic layouts.
-- I used JQuery for the JavaScript in the website
-- I used Font Awesome to add the icons used in the site
-- Block templates were used so I don’t have to repeat my code to save time
-- I used Amazon AWS for storing media and static files for use on my Heroku site
-- I used autopep8 to tidy up my python code
-- I used SQLite 3 for the database which stores the information from my site e.g. products, users
-- Testing was done on a seperate document which is: Testing.md
-- W3C Markup was used this to check my HTML for errors and typos
-- W3C CSS was used to check the validity of my CSS
-- Google Chrome Developer Tools for testing different divice sizes
-- Responsinator for testing different divice sizes
-- Fontawesome was used for some icons on the website
+- __HTML5__ was used as the main language for the templates
+- __CSS__ was ued for styling the webpage
+- __JavaScript__ was used for some front end functionality
+- __Python3__ was used for backend data manipulation
+- __Github__ was used for version control
+- __Gitpod__ to build the website
+- __Django__ was used as as a python based web framework
+- __Django Allauth__ for the authentication system 
+- __Django Countries__ which was used for the country field for user to be able to selct the contry they are from
+- __Django Crispy__ Forms to helps to manage the forms and able adjust forms properties in the backend
+- __Gunicorn__ (‘Green Unicorn’) is a pure-Python WSGI server for UNIX
+- __Pillow__ to be able to use the image field for the products on the site
+- __Stripe__ to set up the payment methods for the site as customer can pay by card
+- __Bootstrap__ for responsive simplistic layouts
+- __JQuery__ for the JavaScript in the website
+- __Font Awesome__ to add the icons used in the site
+- __Amazon AWS__ for storing media and static files for use on my Heroku site
+- __Autopep8__ to tidy up my python code
+- __SQLite 3__ for the database which stores the information from my site e.g. products, users
+- __W3C Markup__ was used this to check my HTML for errors and typos
+- __W3C CSS__ was used to check the validity of my CSS
+- __Google Chrome Developer Tools__ for testing different divice sizes
+- __Responsinator__ for testing different divice sizes
+- __Fontawesome__ was used for some icons on the website
+- Testing was done on a seperate document which is: Testing.md ???
 
-## Deployment
+### Deployment
 This project was developed using the GitPod and was committed to git and pushed to GitHub using the built in function within GitPod. 
 
 
