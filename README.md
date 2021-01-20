@@ -120,10 +120,10 @@ All the necessary files are together in the following folders:
 - Product Page: product details
 
 ### Code Structure
-![Part 1](readme/codestructure_part1.JPG)<br>
-![Part 2](readme/codestructure_part2.JPG)<br>
-![Part 3](readme/codestructure_part3.JPG)<br>
-![Part 4](readme/codestructure_part4.JPG)
+![Part 1](readme/codestructure_part1.jpg)
+![Part 2](readme/codestructure_part2.jpg)
+![Part 3](readme/codestructure_part3.jpg)
+![Part 4](readme/codestructure_part4.jpg)
 
 ### Skeleton 
 - Header: 
@@ -222,9 +222,9 @@ All the necessary files are together in the following folders:
 - Color schema: green
 - Background color: white, accept the Home Page has a full image
 
-![Dark_Green](readme/dark_green.JPG | width="200") <br>
-![Light_Green](readme/light_green.JPG | width="200") <br>
-![Btn_Success](readme/btn-success.JPG | width="200")
+![Dark_Green](readme/dark_green.JPG) <br>
+![Light_Green](readme/light_green.JPG) <br>
+![Btn_Success](readme/btn-success.JPG)
 
 - Header slider: 
   - Text color: white
@@ -322,14 +322,19 @@ All the necessary files are together in the following folders:
   - Button 2: green, white text
 
 ### Mockups 
-The following wireframes were created using Balsamiq to design the website layout options:
-![Homepage](readme/HOMEPAGE.pdf)<br>
-![Products](readme/PRODUCTS.pdf)<br>
-![Product Details](readme/PRODUCT_DETAILS.pdf)<br>
-![Register](readme/REGISTER.pdf)<br>
-![Login](readme/LGOIN.pdf)<br>
-![Bag](readme/BAG.pdf)<br>
-![Checkout](readme/CHECKOUT.pdf)
+The following wireframes were created using Balsamiq to design the website layout options:<br>
+![Homepage](readme/homepage.JPG)<br>
+![Products](readme/products.JPG)<br>
+![Product Details](readme/product_details.JPG)<br>
+![Login](readme/login.JPG)<br>
+![Bag](readme/bag.JPG)<br>
+![Checkout](readme/checkout.JPG)<br>
+Signup<br>
+Add Product<br>
+Edit Product<br>
+Profile<br>
+Password reset<br>
+Logout
          
 ## Features
 
@@ -371,4 +376,15 @@ The following wireframes were created using Balsamiq to design the website layou
 ### Deployment
 This project was developed using the GitPod and was committed to git and pushed to GitHub using the built in function within GitPod. 
 
+### Deploying to Heroku
+The app is currently being deployed on Heroku using the master branch on Github.
+These are the steps that were taken to deploy to Heroku:
 
+1. In GitHub create a requirements.txt file for Heroku can install the necessary dependencies to run the app. The command used to create the file: pip3 freeze --local > requirements.txt.
+2. In GitHub create a Procfile for Heroku to tell what kind of application it is deploying and how to run. The command used to create the file: echo web: python run.py > Procfile.
+3. Create a free Heroku account.
+4. Create a new app for the project, selecting a name for the app and choose the closest region.
+5. In the Deploy tab choose deployment method GitHub, select your GitHub project.
+6. In the Settings tab choose Reveal Config Vars and put in the same values as in your env.py.
+7. In the Deploy tab choose Enable Automatic Deploys.
+8. Open app.
