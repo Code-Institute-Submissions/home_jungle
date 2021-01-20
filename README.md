@@ -74,20 +74,23 @@ Every user has the option to register for an account and to login at their accou
 On this website the admin has the option to use all the CRUD functions: Create, Read, Update and Delete.
 
 ### Scope
-
-- base.html / The Base Page: the navigation header for all the pages
-- home.html / The Home Page: the landing page where users can choose how to search for products
-- signup.html / The Register Page: for new users to create an account
-- login.html / The Login Page: for already registered users to login
-- profiles.html / The Profile Page: with all the personal information and order history of registered users
-- bag.html / The Bag Page: for users to see what is in their bag
-- checkout.html / The Checkout Page: a form with all the personal details of the user and an overview of the bag
-- products.html / The Products Page: a page with all the products, sorted by the way the user has choosen
-- add_product.html / The Add Product Page: the page for the admin to add a new product
-- edit_product.html / The Edit Product Page: the page for the admin to to edit a existing product
-- static folder: all the static files
-- media folder: all the products
-- readme folder: all the files for the README.md
+All the necessary files are together in the following folders:
+- bag = for The Bag Page: for users to see what is in their bag
+- checkout = for The Checkout Pages with all the information before and after placing the order
+- home = for The Home Page: the landing page where users can select how to view the products
+- home_jungle = the Python code for this website
+- media = all the images used on the website
+- products = for:
+  - The Products Page: a page with all the products, sorted by the way the user has choosen
+  - The Product Detail Page: to view each product with more details
+- profiles = for The Profile Page: with all the personal information and order history of registered users
+- templates = for:
+  - The Base Page: with the whole navbar
+  - The Navbar Pages: for displaying the navbar depending on the screen size
+  - The Toasts: the pop-ups with extra information
+  - The Allauth Pages: for all logging options
+- static: all the static files
+- readme: all the extra files for the README.md
 
 ### Structure
 - Header: 
@@ -117,7 +120,10 @@ On this website the admin has the option to use all the CRUD functions: Create, 
 - Product Page: product details
 
 ### Code Structure
-![See Code Structure](readme/codestructure_homejungle.txt)
+![Part 1](readme/codestructure_part1.JPG)<br>
+![Part 2](readme/codestructure_part2.JPG)<br>
+![Part 3](readme/codestructure_part3.JPG)<br>
+![Part 4](readme/codestructure_part4.JPG)
 
 ### Skeleton 
 - Header: 
@@ -164,7 +170,7 @@ On this website the admin has the option to use all the CRUD functions: Create, 
       - All Decorations
 - Homepage: 
   - Button 1: link to product page
-- Register: form field:
+- Signup: form field:
   - Field 1: e-mail address
   - Field 2: e-mail address confirmation
   - Field 3: username
@@ -213,12 +219,12 @@ On this website the admin has the option to use all the CRUD functions: Create, 
 
 - Font Family standard text: Lato
 - Font Family titles and categories: Abril Fatface from Google Fonts
-- Color scheme: green
+- Color schema: green
 - Background color: white, accept the Home Page has a full image
 
-![Dark_Green](readme/dark_green.JPG width="200") <br>
-![Light_Green](readme/light_green.JPG width="200") <br>
-![Btn_Success](readme/btn-success.JPG width="200")
+![Dark_Green](readme/dark_green.JPG | width="200") <br>
+![Light_Green](readme/light_green.JPG | width="200") <br>
+![Btn_Success](readme/btn-success.JPG | width="200")
 
 - Header slider: 
   - Text color: white
@@ -317,12 +323,12 @@ On this website the admin has the option to use all the CRUD functions: Create, 
 
 ### Mockups 
 The following wireframes were created using Balsamiq to design the website layout options:
-![Homepage](readme/HOMEPAGE.pdf)
-![Products](readme/PRODUCTS.pdf)
-![Product Details](readme/PRODUCT_DETAILS.pdf)
-![Register](readme/REGISTER.pdf)
-![Login](readme/LGOIN.pdf)
-![Bag](readme/BAG.pdf)
+![Homepage](readme/HOMEPAGE.pdf)<br>
+![Products](readme/PRODUCTS.pdf)<br>
+![Product Details](readme/PRODUCT_DETAILS.pdf)<br>
+![Register](readme/REGISTER.pdf)<br>
+![Login](readme/LGOIN.pdf)<br>
+![Bag](readme/BAG.pdf)<br>
 ![Checkout](readme/CHECKOUT.pdf)
          
 ## Features
