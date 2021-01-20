@@ -90,7 +90,7 @@ All the necessary files are together in the following folders:
   - The Toasts: the pop-ups with extra information
   - The Allauth Pages: for all logging options
 - static: all the static files
-- readme: all the extra files for the README.md
+- readme: all the extra files for the README
 
 ### Structure
 - Header: 
@@ -120,10 +120,10 @@ All the necessary files are together in the following folders:
 - Product Page: product details
 
 ### Code Structure
-![Part 1](readme/codestructure_part1.jpg)
-![Part 2](readme/codestructure_part2.jpg)
-![Part 3](readme/codestructure_part3.jpg)
-![Part 4](readme/codestructure_part4.jpg)
+![Part 1](readme/codestructure_bag_checkout.JPG)
+![Part 2](readme/codestructure_home_products.JPG)
+![Part 3](readme/codestructure_profiles_templates.JPG)
+![Part 4](readme/codestructure_readme.JPG)
 
 ### Skeleton 
 - Header: 
@@ -219,8 +219,8 @@ All the necessary files are together in the following folders:
 
 - Font Family standard text: Lato
 - Font Family titles and categories: Abril Fatface from Google Fonts
-- Color schema: green
 - Background color: white, accept the Home Page has a full image
+- Color schema: green
 
 ![Dark_Green](readme/dark_green.JPG) <br>
 ![Light_Green](readme/light_green.JPG) <br>
@@ -326,15 +326,15 @@ The following wireframes were created using Balsamiq to design the website layou
 ![Homepage](readme/homepage.JPG)<br>
 ![Products](readme/products.JPG)<br>
 ![Product Details](readme/product_details.JPG)<br>
-![Login](readme/login.JPG)<br>
 ![Bag](readme/bag.JPG)<br>
 ![Checkout](readme/checkout.JPG)<br>
-Signup<br>
-Add Product<br>
-Edit Product<br>
-Profile<br>
-Password reset<br>
-Logout
+![Add Product](readme/add_product.JPG)<br>
+![Edit Product](readme/edit_product.JPG)<br>
+![Signup](readme/signup.JPG)
+![Login](readme/login.JPG)<br>
+![Logout](readme/logout.JPG)
+![Profile](readme/profile.JPG)<br>
+![Password Reset](readme/password_reset.JPG)<br>
          
 ## Features
 
