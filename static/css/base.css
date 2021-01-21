@@ -375,14 +375,14 @@ input[name='q']::placeholder {
     }
 
     #delivery-banner {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     .nav-link {
         padding: 0.15rem;
     }
 
-    .nav-link i.fa-2x {
+    .nav-link i.fa {
         font-size: 1rem;
     }
 
