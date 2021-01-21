@@ -292,14 +292,14 @@ All the necessary files are together in the following folders:
 - Add Product Page:
   - Background: white
   - Form: white with black borders, light grey text
-  - Button 1: green with black border, white text
+  - Button 1: black, white text
   - Button 2: white with black border, black text
   - Button 3: green with black border, white text
 - Edit Product Page:
   - Background: white
   - Form: white with black borders, light grey text
   - Checkbox: red, unchecked
-  - Button 1: green with black border, white text
+  - Button 1: black, white text
   - Button 2: white with black border, black text
   - Button 3: green with black border, white text 
 - Products Page:
@@ -320,6 +320,23 @@ All the necessary files are together in the following folders:
   - Quantity: left the minus icon, middle the quantity, right the plus icon
   - Button 1: white with black border, black text
   - Button 2: green, white text
+- Checkout Page:
+    - Background: white
+    - Form: white with black borders, light grey text
+    - Button 1: white with black border, black text
+    - Button 2: green, white text
+    - Order Summary with the products added to the bag:
+        - Product Image
+        - Product text: dark grey
+        - Product value: black
+- Checkout Success Page
+    - Background: white
+    - Title: dark green
+    - Text: dark grey
+    - Button: green, white text
+- Confirm Email Page:
+    - Background: white
+    - Text: light grey
 
 ### Mockups 
 The following wireframes were created using Balsamiq to design the website layout options:<br>
@@ -337,8 +354,101 @@ The following wireframes were created using Balsamiq to design the website layou
 ![Password Reset](readme/password_reset.JPG)<br>
          
 ## Features
-
-### Code Structure
+The webpage consists of the following features:
+- Header
+  - Autoplay slider
+  - The title is a link to the Home Page
+  - The search bar, searches through all the products
+  - My Jungle icon is a collapsible menu with multiple options, depending on the user is logged out, logged in or the admin
+    - Logged out user:
+      - Register will lead to the Sign Up Page 
+      - Login will lead to the Login Page 
+    - Logged in user:
+      - Profile will lead to the Sign Up Page
+      - Logout will lead to the Logout Page
+    - Admin:
+      - Product Management will lead to the Add Product Page
+      - Profile will lead to the Profile Page
+      - Logout will lead to Logout Page
+   - The Shopping Cart icon will lead to the Bag Page 
+  - Product Navbar will lead to the Product Page, sorted by the way the user selected  
+- Home Page 
+  - The button is a link to an overview of all the products     
+- Products Page
+  - In the right top a collapsible menu to sort the products
+  - 1, 2, 3 or 4 products horizontal alligned, depending on device size
+  - The Admin has the option to edit or delete the product
+- Product Detail Page:
+  - Option to ascend or descend the quantity of the product
+  - A Continue Shopping button, which will lead to the Product Page
+  - A add to Bag button:
+    - Will lead to the Confirm-Email Page
+    - Toast will appear with: 
+      - The message: Success! Added (product name) to your bag
+      - When the order total is underneath the $50,- a message will show up with how much more to spend to get free delivery
+      - A Go to secure checkout button, which will lead to the Bag page
+    - For the admin:
+      - Option to edit or delete the product
+      - Edit link will lead to the Edit Product Page
+      - Delete link:
+        - Product will deleted from the database
+        - Toast will appear with the message: Success! Product deleted!
+        - Admin will be directed to the Product Page
+- Bag Page:
+  - Option to ascend or descend the quantity of the product with an option to update the bag or delete the product
+  - Continue Shopping button which will lead to the Product Page
+  - Secure Checkout button which will lead to the Checkout Page
+- Checkout Page:
+  - A form with fields for the personal details, the delivery details and the creditcard number, which are all required
+  - A link to Create an account, which will link to the Sign Up Page
+  - A link to Login, which will link to the Login Page
+  - An overview with all the products in the bag
+  - An Adjust Bag Button, which will lead to the Bag Page
+  - A Complete Order button, which will lead ......
+- Checkout Success Page:
+  - Overview of the order
+  - A Back to the Shop button, which will lead to the Product Page
+  - Toast will appear with the message: Success! Order successfully processed! Your order number is (order number) A confirmation email will be sent to (e-mail address)
+- Sign Up Page:
+  - A form with required fields
+  - A link to the Login Page
+  - A Back to Login button, which will lead to the Login Page
+  - A Sign Up Button, when pressed:
+    - The form will give an error when a field is filled in incorrect
+    - Will lead to the Confirm-Email Page
+    - Toast will appear with the message: Alert! Confirmation e-mail sent to (e-mail address)
+- Login Page
+  - A link to the Signup Page
+  - A form with required fields
+  - A checkbox the remember the information in the required fields
+  - A Home button, which will lead to the Home Page
+  - A Sign In button, when pressed:
+    - The form will give an error when a field is filled in incorrect
+    - Will lead to the Home Page
+    - Toast will appear with the message: Success! Successfully signed in as (username)
+  - A link to the Password Reset Page 
+- Profile Page:
+  - A form with all the user details
+  - An Update Information button to add/edit the form information
+  - The order history
+- The Logout Page: 
+   - A Cancel button, which will lead to the Home Page
+   - A Sign Out button, which will lead to the Home Page
+- Add Product Page by admin:
+  - Category is a collabsible menu
+  - The form fields are required
+  - A Select Image button will pop-up the users explorer to select an image
+  - A Cancel button will lead to the Products Page
+  - A Add Product button will send the new product to the database and will lead the admin to the Product Detail Page of the added product
+  - Toast will appear with the message: Success! Successfully added product!
+- Edit Product Page by admin:
+  - Category is a collabsible menu
+  - The form fields are required
+  - A Checkbox to remove the image
+  - A Select Image button will pop-up the users explorer to select an image
+  - A Cancel button will lead to the Products Page
+  - A Update Product button will send the edited product to the database and will lead the admin to the Product Detail Page of the edited product
+  - Toast will appear with the message: Success! Successfully updated product!
 
 ### Features left to implement
 - Social account login (Google and Facebook). This feature allows users to login using social networks accounts, Google and Facebook, that would enhance user experience and make the login process easier. And a button to share a product on their social media account.
@@ -371,7 +481,6 @@ The following wireframes were created using Balsamiq to design the website layou
 - __Google Chrome Developer Tools__ for testing different divice sizes
 - __Responsinator__ for testing different divice sizes
 - __Fontawesome__ was used for some icons on the website
-- Testing was done on a seperate document which is: Testing.md ???
 
 ### Deployment
 This project was developed using the GitPod and was committed to git and pushed to GitHub using the built in function within GitPod. 
@@ -380,11 +489,11 @@ This project was developed using the GitPod and was committed to git and pushed 
 The app is currently being deployed on Heroku using the master branch on Github.
 These are the steps that were taken to deploy to Heroku:
 
-1. In GitHub create a requirements.txt file for Heroku can install the necessary dependencies to run the app. The command used to create the file: pip3 freeze --local > requirements.txt.
-2. In GitHub create a Procfile for Heroku to tell what kind of application it is deploying and how to run. The command used to create the file: echo web: python run.py > Procfile.
-3. Create a free Heroku account.
-4. Create a new app for the project, selecting a name for the app and choose the closest region.
-5. In the Deploy tab choose deployment method GitHub, select your GitHub project.
-6. In the Settings tab choose Reveal Config Vars and put in the same values as in your env.py.
-7. In the Deploy tab choose Enable Automatic Deploys.
+1. In GitHub create a requirements.txt file for Heroku can install the necessary dependencies to run the app. The command used to create the file: pip3 freeze --local > requirements.txt
+2. In GitHub create a Procfile for Heroku to tell what kind of application it is deploying and how to run. The command used to create the file: echo web: python run.py > Procfile
+3. Create a free Heroku account
+4. Create a new app for the project, selecting a name for the app and choose the closest region
+5. In the Deploy tab choose deployment method GitHub, select your GitHub project
+6. In the Settings tab choose Reveal Config Vars and export the same values to GitPod
+7. In the Deploy tab choose Enable Automatic Deploys
 8. Open app.
