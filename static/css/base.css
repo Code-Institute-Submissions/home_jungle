@@ -369,11 +369,13 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
+
     .navbar-styling {
     background-color: #EDFBED;
     }
-    .display-4.logo-font.text-black {
-        font-size: 2rem;
+
+    #delivery-banner {
+        font-size: .9rem;
     }
 
     .nav-link {
