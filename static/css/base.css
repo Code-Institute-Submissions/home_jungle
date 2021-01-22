@@ -376,7 +376,7 @@ input[name='q']::placeholder {
     }
 
     .nav-link {
-        padding: 10px;
+        padding: 1px;
     }
 
     .nav-link i {
@@ -384,6 +384,11 @@ input[name='q']::placeholder {
     }
 
     .nav-link p {
+        font-size: 60%;
+    }
+
+    .navbar-toggler {
+        padding: 1px 1px;
         font-size: 60%;
     }
 
