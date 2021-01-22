@@ -368,6 +368,7 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+        background: url('/media/homepage_image.jpg') no-repeat center right fixed;
     }
 
     .navbar-styling {
