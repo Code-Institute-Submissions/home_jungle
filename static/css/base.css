@@ -374,8 +374,8 @@ input[name='q']::placeholder {
         background-color: #EDFBED;
     }
 
-    .nav-link {
-        padding: 0rem;
+    .nav-link p {
+        padding: 0.1rem;
     }
 
     .nav-link i.fa {
