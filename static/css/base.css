@@ -376,15 +376,14 @@ input[name='q']::placeholder {
     }
 
     .nav-link {
-        padding: 60%;
+        padding: 10px;
     }
 
-    .nav-link i.fa {
+    .nav-link i {
         font-size: 60%;
     }
 
-    .navbar-toggler {
-        padding: .10rem .10rem;
+    .nav-link p {
         font-size: 60%;
     }
 
