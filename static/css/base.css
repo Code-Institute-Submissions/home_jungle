@@ -368,22 +368,19 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
-        background: url('/media/homepage_image.jpg') no-repeat right center fixed;
+        background: url('/media/homepage_image.jpg') no-repeat right fixed;
     }
 
     .navbar-styling {
-    background-color: #EDFBED;
+        background-color: #EDFBED;
+        font-size: 10px;
     }
 
     .nav-link {
         padding: 1px;
     }
 
-    .nav-link i {
-        font-size: 60%;
-    }
-
-    .nav-link p {
+    .nav-link i.fa-2x {
         font-size: 60%;
     }
 
