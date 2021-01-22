@@ -373,20 +373,19 @@ input[name='q']::placeholder {
 
     .navbar-styling {
         background-color: #EDFBED;
-        font-size: 10px;
     }
 
     .nav-link {
-        padding: 1px;
+        padding: 0rem;
     }
 
-    .nav-link i.fa-2x {
-        font-size: 60%;
+    .nav-link i.fa {
+        font-size: 1rem;
     }
 
     .navbar-toggler {
-        padding: 1px 1px;
-        font-size: 60%;
+        padding: .6rem .6rem;
+        font-size: 1rem;
     }
 
     .btn.btn-outline-black.rounded-0,
