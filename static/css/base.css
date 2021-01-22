@@ -374,21 +374,17 @@ input[name='q']::placeholder {
     background-color: #EDFBED;
     }
 
-    #delivery-banner {
-        font-size: .8rem;
-    }
-
     .nav-link {
-        padding: 0.15rem;
+        padding: 0.10rem;
     }
 
     .nav-link i.fa {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
+        padding: .10rem .10rem;
+        font-size: .8rem;
     }
 
     .btn.btn-outline-black.rounded-0,
