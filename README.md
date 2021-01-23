@@ -21,10 +21,13 @@ _This app is made for educational use only._
   - [Database Schema](#database-schema)
   - [Features left to implement](#features-left-to-implement)
 - [Technologies](#technologies)
-  - [Deployment](#deployment)
-  - [Setting up Heroku](#setting-up-heroku)
-  - [Deploying to Heroku](#deploying-to-heroku)
-  - [Committing files to GitHub](#committing-files-to-github)
+- [Deployment](#deployment)
+  - [Store static files and images on AWS](#store-static-files-and-images-on-aws)
+  - [Setup user to access bucket](#setup-user-to-access-bucket)
+  - [Connect S3 bucket to Django](#connect-s3-bucket-to-django)
+  - [Adding other files to S3 bucket](#adding-other-files-to-s3-bucket)
+  - [Forking the GitHub Repository](#forking-the-github-repository)
+  - [Making a Local Clone](#making-a-local-clone)
 - [Credits](#credits)
   - [Content](#content)
   - [Media](#media)
@@ -472,6 +475,7 @@ The webpage consists of the following features:
 - A place where the registered user can rate a product.
 - A page where the admin can start a blog.
 - A button to sign up to the newsletter.
+- Responsive to all types of devices.
 
 ## Technologies
 - __HTML5__ was used as the main language for the templates
@@ -499,18 +503,115 @@ The webpage consists of the following features:
 - __Responsinator__ for testing different divice sizes
 - __Fontawesome__ was used for some icons on the website
 
-### Deployment
-This project was developed using the GitPod and was committed to git and pushed to GitHub using the built in function within GitPod. 
+## Deployment
 
-### Deploying to Heroku
-The app is currently being deployed on Heroku using the master branch on Github.
-These are the steps that were taken to deploy to Heroku:
+### Store static files and images on AWS
+1. Go to aws.amazon.com there create an account and follow the steps or log in.
+2. Once logged in search for S3 and open it and create a new bucket and give it a name. to keep it simple I gave it my Heroku app name, taste-world-snacks. Then select the region that is close to you, uncheck block all public access and acknowledge that the bucket will be public. It needs to be public to allow public access to our static files. Then click create bucket.
+3. The new bucket needs a few basic settings.
+  - To do that select your bucket, go to properties tab, look for static website hosting and click edit and click on enable and host a static website. I used index.html and error.html as index and error documents. As this is for educational use so I can go with defaults.
+  - Then go to the permission tab, from there the cors configuration tab and click edit. I pasted in the Cors configuration provided by school. This is to setup the required access between our Heroku app and this S3 bucket.
+  - Then under the policy tab in the permission tab select policy generator to create a security policy for the bucket. The policy type is S3 bucket policy, effects will be allow, principal will be , action will be get object and the ARN you can find on top of the bucket policy tab. Click add statement, then generate policy. Copy this policy into the bucket policy editor and add a / on to the end of the resource key to allow all access to all resources in the bucket and finally click save. Leave the policy generate window open for when you will create a user.
+  -As the last step go to the access control list tab and select public access to everyone, select list and understand the effects and save.
 
-1. In GitHub create a requirements.txt file for Heroku can install the necessary dependencies to run the app. The command used to create the file: pip3 freeze --local > requirements.txt
-2. In GitHub create a Procfile for Heroku to tell what kind of application it is deploying and how to run. The command used to create the file: echo web: python run.py > Procfile
-3. Create a free Heroku account
-4. Create a new app for the project, selecting a name for the app and choose the closest region
-5. In the Deploy tab choose deployment method GitHub, select your GitHub project
-6. In the Settings tab choose Reveal Config Vars and export the same values to GitPod
-7. In the Deploy tab choose Enable Automatic Deploys
-8. Open app.
+### Setup user to access bucket
+1. Go back to the server menu and open I am. Click on groups, create a new group and give it a name. To keep it simple I gave it the name manage-taste-world-snacks. Then click on create group.
+2. To make a policy to use to access our bucket click on policies and then create policy. Go to the JSON tab, click on import managed policy, search for S3, choose AmazonS3FullAccess and import. As I only want full access to the bucket and everything in it, you will go to the policy generate page that you left open and copy the ARN behind resource. You can paste this in the list behind resource and in a second line past it in again but with /* behind it. Click review policy, give it a name and description and click create policy. I name mine taste-world-snacks and as description, I added to access S3 bucket for taste world snacks static files.
+3. You will attach the policy to the group you just created. To do so go to groups, click on the group that was just made, click attach policy, search for the policy with the name that you just made, select it and click attach policy.
+4. Then finally you will create a user to put in the group. Click on users page, click add user and give it a name. I called it taste-world-snacks-staticfiles-user. select programmatic access as access type, click next, select your group, click through till the end and then click create user. Download the CSV file with the user access key and secret key and click close. It is very important to download and save this file as it cannot be downloaded or accessed again.
+
+### Connect S3 bucket to Django
+1. In the code editor install bato 3, django-storages and freeze them. Add storages in settings.py under installed apps. -pip3 install bato 3, pip3 install django-storages, pip3 freeze > requirements.txt
+2. You need to add the next settings under the media root section of settings.py to tell it with which bucket to communicate with. Add an if statement to check if there is an environment variable called use aws and give it these variables with the corresponding values:
+```bash
+  if 'USE_AWS' in os.environ:
+      AWS_STORAGE_BUCKET_NAME,
+      AWS_S3_REGION_NAME,
+      AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID'),
+      AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY'),
+      AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
+3. Then go to Heroku settings tap and reveal config vars to add:
+```bash
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+USE_AWS with value True
+```
+4. You can find the credentials in the CSV file you downloaded from AWS and remove the DISABLE COLLECTSTATIC variable.
+5. In your code editor create a file named custom_storages.py to tell Django where to store static files and uploaded product images when you run collect static files. In this file you import settings from django.config and import S3Boto3Storage from storages.backends.s3boto3. Add a class to tell Django where to store static files and another for where to store media files.
+```bash
+  from django.conf import settings
+  from storages.backends.s3boto3 import S3Boto3Storage
+
+  class StaticStorage(S3Boto3Storage):
+      location = settings.STATICFILES_LOCATION
+
+  class MediaStorage(S3Boto3Storage):
+  	    location = settings.MEDIAFILES_LOCATION
+```
+6. Then go back to settings.py to tell it that for static file storage you want to use the StaticStorage class, for media files you want MediaStorage and what location it should save them.
+```bash
+  STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+  STATICFILES_LOCATION = 'static'
+  DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+  MEDIAFILES_LOCATION = 'media'
+```
+7. You also need to override and explicitly set the URLs for static and media files using your custom domain and new locations.
+```bash
+  STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+  MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+
+### Adding other files to S3 bucket
+1. You can add an extra setting to the use aws if statement in settings.py, that will tell the browser that it is okay to cache static files for a long time.
+```bash
+AWS_S3_OBJECT_PARAMETERS = {
+ 		 'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+ 		 'CacheControl': 'max-age=94608000',
+  }
+```
+2. To add media files to your S3 bucket, you need to go back to awsamazon.com, open S3, open your bucket, click on create folder and give it a name. I called mine media. Open this folder, click upload then click on add files, then select all the images you want to select and click upload. If you have your images on Github than download them first from there and make sure that you add your images in with the same path as in your local database, example images/image.jpg.
+
+### Forking the GitHub Repository
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+1. Navigate to https://github.com/kimkesdev/home_jungle.
+2. Click the green 'Clone or Download' button.
+3. Copy the URL in the dropdown box.
+4. Using your favourite IDE open up your preferred terminal.
+5. Navigate to your desired file location.
+6. Copy the following code and input it into your terminal to clone Cook with me.
+7. git clone https://github.com/kimkesdev/home_jungle.git
+```bash
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+8. Press Enter. Your local clone will be created.
+```bash
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+## Credits
+
+### Content
+- <a href="https://www.plantsome.nl/" target="_blank">Plantsome</a> for the product info in the plant section
+- The rest is made up by myself
+
+### Media
+- <a href="https://www.pixabay.com/" target="_blank">Pixabay</a> for some free images
+- <a href="https://www.unsplash.com/" target="_blank">Unsplash</a> for some free images
+- <a href="https://www.fontawesome.com/" target="_blank">Fontawesome</a> for some free icons
+- <a href="https://www.garyshood.com/" target="_blank">Garyshood</a> to resize the images
+
+### Acknowledgements
+- Code Institute Course
+- YouTube
+- Slack Community
