@@ -372,18 +372,19 @@ input[name='q']::placeholder {
 
     .navbar-styling {
         background-color: #EDFBED;
+        letter-spacing: 0.0em;
     }
 
     .nav-link p {
         padding: 0.1rem;
     }
 
-    .nav-link i.fa {
-        font-size: 1rem;
+    .nav-link i.fa-2x {
+        font-size: 0px;
     }
 
     .navbar-toggler {
-        padding: .6rem .6rem;
+        padding: .1rem .1rem;
         font-size: 1rem;
     }
 
