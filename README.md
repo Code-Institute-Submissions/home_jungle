@@ -500,7 +500,6 @@ The webpage consists of the following features:
 - __W3C Markup__ was used this to check my HTML for errors and typos
 - __W3C CSS__ was used to check the validity of my CSS
 - __Google Chrome Developer Tools__ for testing different divice sizes
-- __Responsinator__ for testing different divice sizes
 - __Fontawesome__ was used for some icons on the website
 
 ## Deployment
@@ -509,10 +508,10 @@ The webpage consists of the following features:
 1. Go to aws.amazon.com there create an account and follow the steps or log in.
 2. Once logged in search for S3 and open it and create a new bucket and give it a name. to keep it simple I gave it my Heroku app name, taste-world-snacks. Then select the region that is close to you, uncheck block all public access and acknowledge that the bucket will be public. It needs to be public to allow public access to our static files. Then click create bucket.
 3. The new bucket needs a few basic settings.
-  - To do that select your bucket, go to properties tab, look for static website hosting and click edit and click on enable and host a static website. I used index.html and error.html as index and error documents. As this is for educational use so I can go with defaults.
-  - Then go to the permission tab, from there the cors configuration tab and click edit. I pasted in the Cors configuration provided by school. This is to setup the required access between our Heroku app and this S3 bucket.
-  - Then under the policy tab in the permission tab select policy generator to create a security policy for the bucket. The policy type is S3 bucket policy, effects will be allow, principal will be , action will be get object and the ARN you can find on top of the bucket policy tab. Click add statement, then generate policy. Copy this policy into the bucket policy editor and add a / on to the end of the resource key to allow all access to all resources in the bucket and finally click save. Leave the policy generate window open for when you will create a user.
-  -As the last step go to the access control list tab and select public access to everyone, select list and understand the effects and save.
+    - To do that select your bucket, go to properties tab, look for static website hosting and click edit and click on enable and host a static website. I used index.html and error.html as index and error documents. As this is for educational use so I can go with defaults.
+    - Then go to the permission tab, from there the cors configuration tab and click edit. I pasted in the Cors configuration provided by school. This is to setup the required access between our Heroku app and this S3 bucket.
+    - Then under the policy tab in the permission tab select policy generator to create a security policy for the bucket. The policy type is S3 bucket policy, effects will be allow, principal will be , action will be get object and the ARN you can find on top of the bucket policy tab. Click add statement, then generate policy. Copy this policy into the bucket policy editor and add a / on to the end of the resource key to allow all access to all resources in the bucket and finally click save. Leave the policy generate window open for when you will create a user.
+    -As the last step go to the access control list tab and select public access to everyone, select list and understand the effects and save.
 
 ### Setup user to access bucket
 1. Go back to the server menu and open I am. Click on groups, create a new group and give it a name. To keep it simple I gave it the name manage-taste-world-snacks. Then click on create group.
