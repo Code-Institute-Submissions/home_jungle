@@ -358,7 +358,7 @@ The following wireframes were created using Balsamiq to design the website layou
 ![Password Reset](readme/password_reset.JPG)<br>
 ![Checkout Success](readme/checkout_success.JPG)<br>
 ![Confirm Email](readme/confirm_email1.JPG)<br>
-![Confirm Email](readme/confirm_email2.JPG)
+![Confirm Email](readme/confirm-email2.JPG)
          
 ## Features
 The webpage consists of the following features:
