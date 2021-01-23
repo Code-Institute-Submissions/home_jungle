@@ -402,7 +402,10 @@ The webpage consists of the following features:
         - Toast will appear with the message: Success! Product deleted!
         - Admin will be directed to the Product Page
 - Bag Page:
-  - Option to ascend or descend the quantity of the product with an option to update the bag or delete the product
+  - Option to ascend or descend the quantity of the product with an option to update or remove the product
+    - Remove link:
+      - Lead to updated bag page
+      - Toast will appear with the message: Success! Removed (product name) from your bag
   - Continue Shopping button which will lead to the Product Page
   - Secure Checkout button which will lead to the Checkout Page
 - Checkout Page:
