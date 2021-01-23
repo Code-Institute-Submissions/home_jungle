@@ -213,6 +213,8 @@ All the necessary files are together in the following folders:
   - Button 3: add product
 - Edit Product: form field, the same as add product. Extra option:
   - Checkbox: remove image
+- Confirm E-mail:
+  - Button: Confirm
 - Toasts to display messages as pop ups on every page using django messages module, with messages for most actions across the website.
 
 ### Surface
@@ -336,7 +338,9 @@ All the necessary files are together in the following folders:
     - Button: green, white text
 - Confirm Email Page:
     - Background: white
+    - Title: dark green
     - Text: light grey
+    - Button: green
 
 ### Mockups 
 The following wireframes were created using Balsamiq to design the website layout options:<br>
@@ -352,6 +356,9 @@ The following wireframes were created using Balsamiq to design the website layou
 ![Logout](readme/logout.JPG)
 ![Profile](readme/profile.JPG)<br>
 ![Password Reset](readme/password_reset.JPG)<br>
+![Checkout Success](readme/checkout_success.JPG)<br>
+![Confirm Email](readme/confirm_email1.JPG)<br>
+![Confirm Email](readme/confirm_email2.JPG)
          
 ## Features
 The webpage consists of the following features:
@@ -415,8 +422,14 @@ The webpage consists of the following features:
   - A Back to Login button, which will lead to the Login Page
   - A Sign Up Button, when pressed:
     - The form will give an error when a field is filled in incorrect
-    - Will lead to the Confirm-Email Page
+    - Will lead to the Confirm Email Page
     - Toast will appear with the message: Alert! Confirmation e-mail sent to (e-mail address)
+- Confirm Email Page:
+  - A page with text to go to your E-mail provider
+  - In Email provider click the link to confirm e-mail address
+  - Will lead to the Confirm Email Page now with Button to Confirm
+  - Confirm button will lead to the Login Page
+  - Toast will appear with the message: Success! You have confirmed (e-mail address).
 - Login Page
   - A link to the Signup Page
   - A form with required fields
@@ -434,6 +447,7 @@ The webpage consists of the following features:
 - The Logout Page: 
    - A Cancel button, which will lead to the Home Page
    - A Sign Out button, which will lead to the Home Page
+   - Toast will appear with the message: Success! You have signed out.
 - Add Product Page by admin:
   - Category is a collabsible menu
   - The form fields are required
